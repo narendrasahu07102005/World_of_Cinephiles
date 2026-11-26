@@ -1,0 +1,112 @@
+[
+	{
+		"id": "inception",
+		"title": "Inception",
+		"year": 2010,
+		"director": "Christopher Nolan",
+		"genres": ["Science Fiction", "Action", "Thriller"],
+		"moods": ["mind-bending", "suspenseful", "imaginative"],
+		"description": "A skilled thief enters layered dreams to attempt an unusually ambitious heist.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+		"featured": true
+	},
+	{
+		"id": "parasite",
+		"title": "Parasite",
+		"year": 2019,
+		"director": "Bong Joon-ho",
+		"genres": ["Thriller", "Drama", "Comedy"],
+		"moods": ["thought-provoking", "dark", "suspenseful"],
+		"description": "A struggling family becomes entangled with a wealthy household in a sharp social thriller.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+		"featured": true
+	},
+	{
+		"id": "spirited-away",
+		"title": "Spirited Away",
+		"year": 2001,
+		"director": "Hayao Miyazaki",
+		"genres": ["Animation", "Fantasy", "Adventure"],
+		"moods": ["imaginative", "wonder-filled", "emotional"],
+		"description": "A young girl searches for a way to free her parents in a mysterious spirit world.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+		"featured": true
+	},
+	{
+		"id": "interstellar",
+		"title": "Interstellar",
+		"year": 2014,
+		"director": "Christopher Nolan",
+		"genres": ["Science Fiction", "Adventure", "Drama"],
+		"moods": ["emotional", "imaginative", "thought-provoking"],
+		"description": "A team travels beyond familiar space in search of a future for humanity.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+		"featured": true
+	},
+	{
+		"id": "grand-budapest-hotel",
+		"title": "The Grand Budapest Hotel",
+		"year": 2014,
+		"director": "Wes Anderson",
+		"genres": ["Comedy", "Adventure", "Crime"],
+		"moods": ["whimsical", "uplifting", "stylish"],
+		"description": "A hotel concierge and his protégé become caught up in a changing era and an artful caper.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+		"featured": false
+	},
+	{
+		"id": "everything-everywhere-all-at-once",
+		"title": "Everything Everywhere All at Once",
+		"year": 2022,
+		"director": "Daniel Kwan and Daniel Scheinert",
+		"genres": ["Science Fiction", "Adventure", "Comedy"],
+		"moods": ["imaginative", "emotional", "unexpected"],
+		"description": "An overwhelmed laundromat owner discovers she may be the key to saving the multiverse.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+		"featured": false
+	},
+	{
+		"id": "the-dark-knight",
+		"title": "The Dark Knight",
+		"year": 2008,
+		"director": "Christopher Nolan",
+		"genres": ["Action", "Crime", "Drama"],
+		"moods": ["dark", "suspenseful", "intense"],
+		"description": "A masked hero faces an unpredictable criminal who pushes a city toward chaos.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+		"featured": false
+	},
+	{
+		"id": "get-out",
+		"title": "Get Out",
+		"year": 2017,
+		"director": "Jordan Peele",
+		"genres": ["Horror", "Mystery", "Thriller"],
+		"moods": ["uneasy", "thought-provoking", "suspenseful"],
+		"description": "A weekend visit with his partner's family takes a young photographer into deeply unsettling territory.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
+		"featured": false
+	},
+	{
+		"id": "portrait-of-a-lady-on-fire",
+		"title": "Portrait of a Lady on Fire",
+		"year": 2019,
+		"director": "Celine Sciamma",
+		"genres": ["Drama", "Romance"],
+		"moods": ["intimate", "emotional", "atmospheric"],
+		"description": "An artist and her subject develop a quiet connection on a remote coastal island.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/2LquGwEhbg3soxSCs9VNyh5VJd9.jpg",
+		"featured": false
+	},
+	{
+		"id": "moonlight",
+		"title": "Moonlight",
+		"year": 2016,
+		"director": "Barry Jenkins",
+		"genres": ["Drama"],
+		"moods": ["intimate", "emotional", "reflective"],
+		"description": "Three chapters trace a young man's search for identity, connection, and belonging.",
+		"poster_url": "https://image.tmdb.org/t/p/w500/rcICfiL9fvwRjoWHxW8QeroLYrJ.jpg",
+		"featured": false
+	}
+]

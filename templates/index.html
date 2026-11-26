@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#10100f">
+	<meta name="description" content="Find your next unforgettable film with World of Cinephiles.">
+	<title>World of Cinephiles | Find your next great film</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/static/style.css">
+	<script src="/static/script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to content</a>
+
+	<header class="site-header">
+		<div class="header-inner">
+			<a class="brand" href="#home" aria-label="World of Cinephiles home">
+				<span class="brand-mark" aria-hidden="true">W</span>
+				<span class="brand-name">WORLD <span>OF</span><br>CINEPHILES</span>
+			</a>
+			<button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+				<span></span><span></span>
+			</button>
+			<nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+				<a href="#discover">Discover</a>
+				<a href="#review-studio">Review studio</a>
+				<a href="#taste-dna">Taste DNA</a>
+			</nav>
+			<a class="header-watchlist" href="#watchlist">
+				<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 3.5h10v13l-5-3.2-5 3.2v-13Z" /></svg>
+				<span>Watchlist</span>
+				<span class="watchlist-count" id="watchlist-count">0</span>
+			</a>
+		</div>
+	</header>
+
+	<main id="main-content">
+		<section class="hero" id="home" aria-labelledby="hero-title">
+			<div class="hero-texture" aria-hidden="true"></div>
+			<div class="hero-inner page-shell">
+				<div class="hero-copy">
+					<p class="eyebrow"><span class="eyebrow-rule"></span> A FIELD GUIDE FOR FILM LOVERS</p>
+					<h1 id="hero-title">Find the film<br><em>that finds you.</em></h1>
+					<p class="hero-description">A little curiosity goes a long way. Explore remarkable stories, follow your instincts, and make room for a new favourite.</p>
+					<div class="hero-actions">
+						<a class="button button-gold" href="#discover">Explore movies <span aria-hidden="true">↘</span></a>
+						<a class="text-link" href="#taste-dna">Get to know your taste <span aria-hidden="true">→</span></a>
+					</div>
+					<div class="hero-footnote"><span class="status-dot"></span><span id="catalog-status">A considered collection for curious viewers</span></div>
+				</div>
+				<div class="hero-feature" id="hero-feature" aria-label="Featured movie">
+					<div class="hero-poster-wrap">
+						<img class="hero-poster" id="hero-poster" src="" alt="" data-fallback="true" data-title="Featured film">
+						<span class="poster-index">01 <span>/</span> FEATURED</span>
+					</div>
+					<div class="hero-film-caption">
+						<div>
+							<p class="eyebrow">TONIGHT'S FIRST LOOK</p>
+							<h2 id="hero-film-title">Loading the collection</h2>
+						</div>
+						<button class="round-arrow" id="hero-film-details" type="button" aria-label="View featured movie details">↗</button>
+					</div>
+				</div>
+			</div>
+			<div class="hero-bottom page-shell" aria-hidden="true">
+				<span>THOUGHTFUL PICKS</span><span class="hero-bottom-line"></span><span>NO WRONG TURNS</span>
+			</div>
+		</section>
+
+		<section class="collection-section section-space" id="featured" aria-labelledby="featured-heading">
+			<div class="page-shell">
+				<div class="section-heading heading-split">
+					<div>
+						<p class="eyebrow">THE EDITOR'S CUT</p>
+						<h2 id="featured-heading">Stories worth <em>staying for.</em></h2>
+					</div>
+					<p class="section-aside">A starting point, never a shortlist. Follow a mood, a filmmaker, or the feeling you want to leave with.</p>
+				</div>
+				<div class="movie-grid feature-grid" id="featured-grid" aria-live="polite" aria-busy="true">
+					<p class="collection-message" role="status">Loading featured films...</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="discovery-section section-space" id="discover" aria-labelledby="discover-heading">
+			<div class="page-shell">
+				<div class="section-heading heading-split discovery-heading">
+					<div>
+						<p class="eyebrow">TAKE THE SCENIC ROUTE</p>
+						<h2 id="discover-heading">What are you <em>in the mood for?</em></h2>
+					</div>
+					<p class="section-aside">Search the collection, then let a genre or a feeling narrow the frame.</p>
+				</div>
+				<div class="discovery-tools">
+					<label class="search-box" for="movie-search">
+						<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8"/><path d="m13.2 13.2 4 4"/></svg>
+						<input id="movie-search" type="search" placeholder="Search films, directors, or a feeling..." autocomplete="off">
+						<kbd>/</kbd>
+					</label>
+					<label class="mood-select-wrap" for="mood-filter">
+						<span class="sr-only">Filter by mood</span>
+						<select id="mood-filter"><option value="">Any mood</option></select>
+					</label>
+				</div>
+				<div class="filter-row">
+					<span class="filter-label">BROWSE BY GENRE</span>
+					<div class="genre-filters" id="genre-filters" role="group" aria-label="Filter movies by genre"></div>
+				</div>
+				<div class="results-meta">
+					<p id="results-count" aria-live="polite">Finding your next film...</p>
+					<span class="rating-note">Ratings are not included in this collection</span>
+					<button class="button button-outline hidden" id="clear-filters" type="button">Clear filters</button>
+				</div>
+				<div class="movie-grid discovery-grid" id="movie-grid" aria-live="polite" aria-busy="true">
+					<p class="collection-message" role="status">Loading the film collection...</p>
+				</div>
+				<div class="empty-state hidden" id="no-results">
+					<span class="empty-mark" aria-hidden="true">∅</span>
+					<h3>No films in this frame.</h3>
+					<p>Try a different title, genre, or mood.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="studio-section section-space" id="review-studio" aria-labelledby="review-heading">
+			<div class="page-shell">
+				<div class="section-heading studio-title">
+					<p class="eyebrow">A CLOSER LOOK</p>
+					<h2 id="review-heading">The review <em>studio.</em></h2>
+					<p class="section-aside">Choose a film and a point of view, then make time for a closer look.</p>
+				</div>
+				<div class="studio-layout">
+					<form class="studio-form" id="review-form" novalidate>
+						<label class="field-label" for="review-movie">FILM TITLE</label>
+						<input class="text-input" id="review-movie" name="movie" type="text" maxlength="120" placeholder="Enter a film title" autocomplete="off">
+						<label class="field-label" for="review-type">REVIEW LENS</label>
+						<select class="text-input" id="review-type" name="type">
+							<option value="spoiler-free">Spoiler-free review</option>
+							<option value="detailed">Detailed review</option>
+							<option value="character-analysis">Character analysis</option>
+							<option value="themes-symbolism">Themes &amp; symbolism</option>
+						</select>
+						<button class="button button-gold button-full" type="submit">Generate review <span aria-hidden="true">↗</span></button>
+						<p class="form-caption">Gemini review generation is pending. No review appears unless the service returns one.</p>
+					</form>
+					<div class="review-output" id="review-output" aria-live="polite" aria-busy="false">
+						<div class="output-corner" aria-hidden="true">W / C</div>
+						<div class="output-placeholder" id="review-result">
+							<span class="output-symbol" aria-hidden="true">✳</span>
+							<p class="eyebrow">YOUR REVIEW, IN GOOD COMPANY</p>
+							<h3>A fresh perspective is one good film away.</h3>
+							<p>Enter a title and choose a lens to prepare your review workspace.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="taste-section section-space" id="taste-dna" aria-labelledby="taste-heading">
+			<div class="page-shell taste-shell">
+				<div class="taste-intro">
+					<p class="eyebrow">YOUR PERSONAL FILM COMPASS</p>
+					<h2 id="taste-heading">A little about<br><em>what moves you.</em></h2>
+					<p>Tell us what stays with you after the credits. Your taste profile is built from your own picks.</p>
+					<div class="taste-index"><span>01</span><span class="taste-index-rule"></span><span>YOUR TASTE DNA</span></div>
+				</div>
+				<form class="taste-form" id="taste-form" novalidate>
+					<fieldset class="taste-fieldset">
+						<legend><span class="field-number">01</span> Which worlds do you return to?</legend>
+						<div class="genre-choices" id="genre-choices"></div>
+					</fieldset>
+					<fieldset class="taste-fieldset mood-fieldset">
+						<legend><span class="field-number">02</span> What kind of feeling are you after?</legend>
+						<div class="mood-choices" id="mood-choices"></div>
+					</fieldset>
+					<div class="taste-form-row">
+						<label class="taste-input-group" for="favorite-movie">
+							<span class="field-label"><span class="field-number">03</span> A film you carry with you</span>
+							<input class="text-input" id="favorite-movie" type="text" maxlength="120" placeholder="Name a favourite (optional)">
+						</label>
+						<label class="taste-input-group" for="story-style">
+							<span class="field-label"><span class="field-number">04</span> Your kind of storytelling</span>
+							<select class="text-input" id="story-style">
+								<option value="character-led">Character-led and intimate</option>
+								<option value="slow-burn">A patient, slow-burn reveal</option>
+								<option value="visually-bold">Visually bold and inventive</option>
+								<option value="big-ideas">Big ideas and expansive worlds</option>
+								<option value="unexpected">Unpredictable, with a twist</option>
+							</select>
+						</label>
+					</div>
+					<div class="taste-submit-row">
+						<button class="button button-gold" type="submit">Find my film DNA <span aria-hidden="true">↗</span></button>
+						<p id="taste-message" class="form-caption" aria-live="polite">A reading of your preferences, shaped by your choices.</p>
+					</div>
+					<div class="taste-result hidden" id="taste-result" aria-live="polite"></div>
+				</form>
+			</div>
+		</section>
+
+		<section class="watchlist-section section-space" id="watchlist" aria-labelledby="watchlist-heading">
+			<div class="page-shell">
+				<div class="section-heading heading-split">
+					<div>
+						<p class="eyebrow">FOR A NIGHT THAT HASN'T ARRIVED YET</p>
+						<h2 id="watchlist-heading">Keep a place <em>for later.</em></h2>
+					</div>
+					<p class="section-aside">Your saved films live in this browser, ready whenever you are.</p>
+				</div>
+								<div class="movie-grid watchlist-grid" id="watchlist-grid" aria-busy="true">
+									<p class="collection-message" role="status">Loading your saved films...</p>
+								</div>
+								<div class="watchlist-empty hidden" id="watchlist-empty">
+					<span class="watchlist-empty-icon" aria-hidden="true">＋</span>
+					<p>Your watchlist is a blank reel.</p>
+					<a class="text-link" href="#discover">Find a film to save <span aria-hidden="true">→</span></a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="page-shell footer-inner">
+			<a class="brand footer-brand" href="#home">
+				<span class="brand-mark" aria-hidden="true">W</span>
+				<span class="brand-name">WORLD <span>OF</span><br>CINEPHILES</span>
+			</a>
+			<p>For the love of the story.</p>
+			<a class="footer-top" href="#home">Back to the beginning ↑</a>
+		</div>
+	</footer>
+
+	<dialog class="movie-dialog" id="movie-dialog" aria-labelledby="dialog-title">
+		<button class="dialog-close" id="dialog-close" type="button" aria-label="Close movie details">×</button>
+		<div id="dialog-content"></div>
+	</dialog>
+</body>
+</html>
