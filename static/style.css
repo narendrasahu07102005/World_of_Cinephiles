@@ -236,8 +236,6 @@ h1, h2, h3, p { margin-top: 0; }
 .watch-button { min-height: 28px; display: inline-flex; align-items: center; gap: 6px; padding: 0 8px; border: 1px solid var(--line); color: #c7c0b4; background: transparent; cursor: pointer; font-size: 8px; transition: border-color 160ms ease, color 160ms ease; }
 .watch-button:hover, .watch-button.is-saved { border-color: var(--gold-dark); color: var(--gold-light); }
 .watch-button .watch-symbol { color: var(--gold); font-size: 13px; line-height: 1; }
-.feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-
 .discovery-section { background: #10100f; }
 .discovery-heading { margin-bottom: 30px; }
 .discovery-tools { display: grid; grid-template-columns: minmax(0, 1fr) 190px; gap: 12px; }
@@ -380,7 +378,7 @@ select { color-scheme: dark; }
 	.header-inner { width: calc(100% - 34px); min-height: 67px; grid-template-columns: 1fr auto auto; gap: 15px; }
 	.brand-mark { width: 31px; height: 31px; font-size: 19px; }
 	.brand-name { font-size: 9px; }
-	.menu-toggle { width: 36px; height: 36px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 0; border: 1px solid var(--line); background: transparent; cursor: pointer; }
+	.menu-toggle { width: 42px; height: 42px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 0; border: 1px solid var(--line); background: transparent; cursor: pointer; }
 	.menu-toggle span { width: 14px; height: 1px; background: var(--paper); transition: transform 180ms ease; }
 	.menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }
 	.menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3px) rotate(-45deg); }
@@ -420,11 +418,16 @@ select { color-scheme: dark; }
 	.filter-row { display: block; padding-block: 17px 13px; }
 	.filter-label { display: block; padding: 0 0 11px; }
 	.genre-filters { gap: 6px; }
-	.genre-chip { min-height: 27px; padding-inline: 8px; font-size: 8px; }
+	.genre-chip { min-height: 32px; padding-inline: 8px; font-size: 9px; }
 	.results-meta { align-items: flex-start; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 7px 12px; padding-block: 11px; }
 	.results-meta p { flex: 1 1 100%; }
 	.results-meta p { font-size: 14px; }
 	.rating-note { font-size: 8px; }
+	.round-arrow { width: 40px; height: 40px; }
+	.dialog-close { width: 40px; height: 40px; }
+	.card-detail-link { min-height: 36px; display: inline-flex; align-items: center; padding-block: 5px; font-size: 10px; }
+	.watch-button { min-height: 36px; padding-inline: 10px; font-size: 9px; }
+	.genre-choice span { min-height: 36px; padding-inline: 12px; font-size: 10px; }
 	.studio-layout { grid-template-columns: 1fr; gap: 25px; }
 	.studio-form { max-width: none; }
 	.review-output { min-height: 240px; padding: 28px 23px; }
